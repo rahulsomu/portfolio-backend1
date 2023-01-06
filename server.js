@@ -15,6 +15,6 @@ app.use("/", (req, res) => {
   res.send("Rahul Rana");
 });
 
-app.listen(5000, () => {
-  console.log(`Running on port 5000`);
+app.listen(process.env.PORT, () => {
+  console.log(`Running on port ${process.env.PORT}`);
 });
